@@ -31,12 +31,20 @@ Jupyter Notebook で「Pythonの基礎」→「統計（統計検定 4〜2級レ
 | 方法 | 実行 | このリポジトリ(Private)での使い方 |
 |---|---|---|
 | **ローカル**（おすすめ） | ✅ | 下記「セットアップ」。手元のPCで完結・無料 |
-| **Google Colab** | ✅ | ブラウザだけで実行可。Privateリポジトリは Colab で *GitHub連携を許可* すれば開ける（`File → Open notebook → GitHub` でログイン）。`solidpython2` だけ `!pip install solidpython2` が必要 |
+| **Google Colab** | ✅ | **各ノート上部の「Open in Colab」バッジ**から開ける。Privateのままで可（初回にColabでGitHub連携を許可）。各ノートの**「セットアップ」セルを最初に実行**すると、教材データを自動生成し`solidpython2`も自動インストール（手作業ゼロ） |
 | **GitHub Codespaces** | ✅ | Privateでも動く。リポジトリの `Code → Codespaces` でブラウザ上にJupyter環境が起動。`requirements.txt` を自動利用 |
 | **Binder** | ✅ | ただし**公開リポジトリ専用**。今はPrivateなので使えません（Publicにすれば可） |
 
 > 💡 いちばん手軽なのは **Colab**（インストール不要）、本格的にやるなら **ローカル**（uv）です。
 > クラウドで動かすため `requirements.txt` を同梱しています。
+
+### Google Colabでの使い方（Privateのまま）
+1. ノートを開いて上部の **「Open in Colab」バッジ** をクリック（初回は Colab に GitHub 連携を許可。リポジトリは非公開のまま）。
+2. いちばん上の **「① セットアップ」セルを実行**。
+   - Colabでは教材と同一の合成データ（`data/*.csv`）を自動生成します（ローカルでは何もしません）。
+   - `solidpython2` を使うノートは自動でインストールします。
+3. あとは上から順に実行するだけ。
+- ⚠️ `06_ホビー_陶芸3D` の **FreeCAD / Blender ノートはColab非対応**（デスクトップアプリが必要）。`SolidPython` ノートはColabで動きます。
 
 ## セットアップ（uv 利用）
 
