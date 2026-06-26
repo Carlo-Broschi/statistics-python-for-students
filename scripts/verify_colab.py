@@ -17,7 +17,7 @@ sample=["02_統計_4級/01_データの種類と度数分布.ipynb",
         "05_実践_BtoBマーケ/03_ABテストとKPI.ipynb",
         "01_Python基礎/07_matplotlib入門.ipynb",
         "03_統計_3級/03_確率分布.ipynb",
-        "06_ホビー_陶芸3D/03_SolidPythonで器をつくる.ipynb"]
+        "07_ホビー_陶芸3D/03_SolidPythonで器をつくる.ipynb"]
 for rel in sample:
     p=os.path.join(ROOT,rel); nb=nbformat.read(p,as_version=4)
     try:

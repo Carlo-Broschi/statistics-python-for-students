@@ -4,7 +4,7 @@ from nbbuild import md, code, write_nb
 
 ROOT = "/Users/carlobroschi_imac/Workspace/Dev/Education_Python"
 GH = "https://github.com/Carlo-Broschi/statistics-python-for-students/blob/main/"
-FOLDER = "07_発展_マーケ分析"
+FOLDER = "06_発展_マーケ分析"
 
 def badge(rel):
     u = "https://colab.research.google.com/github/Carlo-Broschi/statistics-python-for-students/blob/main/" + urllib.parse.quote(rel)
