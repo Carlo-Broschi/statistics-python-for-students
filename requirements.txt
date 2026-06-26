@@ -1,0 +1,9 @@
+# クラウド実行（Google Colab / GitHub Codespaces / Binder）用の依存
+# ローカルは pyproject.toml + uv を推奨
+jupyterlab>=4.0
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+scipy>=1.11
+statsmodels>=0.14
+solidpython2>=2.1
