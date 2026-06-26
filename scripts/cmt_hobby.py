@@ -266,7 +266,7 @@ for d in range(80, 161, 20):   # 口径80〜160mmを20mm刻みで
 
 MAP = {k.strip(): v for k, v in PAIRS}
 replaced = 0; unmatched = []
-for p in sorted(glob.glob(f"{ROOT}/06_ホビー_陶芸3D/*.ipynb")):
+for p in sorted(glob.glob(f"{ROOT}/07_ホビー_陶芸3D/*.ipynb")):
     nb = json.load(open(p, encoding="utf-8")); changed = False
     for c in nb["cells"]:
         if c["cell_type"] != "code": continue
