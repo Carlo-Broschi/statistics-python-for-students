@@ -1,0 +1,14 @@
+[project]
+name = "education-python"
+version = "0.1.0"
+description = "中高生向け Python + 統計 + 実践データ分析 + 3Dモデリング 教材"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyterlab>=4.0",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "matplotlib>=3.8",
+    "scipy>=1.11",
+    "statsmodels>=0.14",
+    "solidpython2>=2.1",
+]
