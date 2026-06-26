@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# 3Dモデリングの生成物（SolidPythonノートで生成）
+*.scad
+*.stl
+
+# uv
+uv.lock
