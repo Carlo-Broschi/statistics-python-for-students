@@ -12,5 +12,9 @@ venv/
 *.scad
 *.stl
 
+# ノートが書き出すExcel（to_excel）。教材データ data/*.xlsx は対象外。
+*.xlsx
+!data/*.xlsx
+
 # uv
 uv.lock
