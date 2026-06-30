@@ -86,7 +86,7 @@ plt.rcParams['font.family'] = 'Hiragino Sans'   # Mac
 | `web_marketing.csv` | チャネル×月のマーケファネル（表示・クリック・獲得・費用） | 実践マーケ |
 | `ab_test.csv` | LPボタン色のA/Bテスト結果 | 実践マーケ・2級 |
 | `titanic.csv` | タイタニック号の乗客891人（Kaggle Titanicと同じ内容・公開データ） | 3級/2級 実践 |
-| `monthly_kpi.csv` | 36か月の月次売上・新規リード・受注数（トレンド＋季節性） | 発展マーケ(時系列予測) |
+| `monthly_kpi.csv` | 36か月の月次KPI（新規リード→商談数→受注数→売上 のファネル＋トレンド・季節性） | 発展マーケ(時系列・重回帰) |
 | `btob_customers.csv` | 顧客320件（業界・購入回数・累計売上・最終購入日） | 発展マーケ(RFM/クラスタリング) |
 | `marketing.xlsx` | 上記マーケ系5種を1ブックにまとめたExcel（商談/Webマーケ/ABテスト/月次KPI/顧客の各シート） | スプレッドシート↔Python(08) |
 
