@@ -18,6 +18,7 @@ venv/
 
 # 問題集の写真（著作物）。公開リポジトリには絶対に含めない。
 _problem_photos/
+quiz_photos/
 
 # uv
 uv.lock
