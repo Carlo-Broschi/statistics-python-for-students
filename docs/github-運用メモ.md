@@ -21,7 +21,7 @@ git -c credential.helper='!f(){ echo username=x-access-token; echo "password=$GI
 ```
 - credential.helper にトークンを一時供給する方式。**URLや設定にトークンを残さない**。
 - 毎回打つのが面倒なら、シェルにエイリアス／関数を入れてもよい（例）:
-  ```bash
+```bash
   ghpush() { git -c credential.helper='!f(){ echo username=x-access-token; echo "password=$GITHUB_PERSONAL_ACCESS_TOKEN"; }; f' push "$@"; }
   ```
 
@@ -40,7 +40,7 @@ curl -s -H "Authorization: Bearer $GITHUB_PERSONAL_ACCESS_TOKEN" \
 ```
 
 ## ③ コミット履歴のメールを秘匿（公開前の1回だけ・実施済み）
-> ⚠️ 履歴の書き換え＝force push。共同作業者がいるとトラブルになる。**通常は不要**（今後のコミットは②の設定で自動的にnoreply）。
+> 履歴の書き換え＝force push。共同作業者がいるとトラブルになる。**通常は不要**（今後のコミットは②の設定で自動的にnoreply）。
 ```bash
 git config user.email "59012768+Carlo-Broschi@users.noreply.github.com"   # 今後のコミット用
 git filter-branch -f --env-filter \
