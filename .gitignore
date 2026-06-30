@@ -16,5 +16,8 @@ venv/
 *.xlsx
 !data/*.xlsx
 
+# 問題集の写真（著作物）。公開リポジトリには絶対に含めない。
+_problem_photos/
+
 # uv
 uv.lock
