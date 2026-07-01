@@ -10,9 +10,28 @@
 - コミット作者メールは noreply に固定（個人Gmailを出さない）。
 - トークン権限：**push・閲覧は可／リポジトリ新規作成・公開設定変更は不可**（後者は Web UI）。
 
+## 基本フロー（gh 認証済み・日常）
+最新化 → ブランチ → 変更 → PR → マージ → 後片付け。
+
+```bash
+git pull                                  # main を最新化
+git checkout -b feature/xxx               # 作業ブランチを切る
+git add -A && git commit -m "type: 要約"   # 変更を記録（英語短文）
+git push -u origin feature/xxx            # 初回 push（以降は git push）
+gh pr create --base main --fill           # PR 作成（--fill で直近コミットから）
+gh pr merge <PR番号> --merge              # レビュー後にマージ
+git checkout main && git pull             # main を同期
+git push origin --delete feature/xxx      # リモートの作業ブランチ削除
+git branch -d feature/xxx                 # ローカルの作業ブランチ削除
+```
+
+- 状態確認：`git status` ／ `git log --oneline -5` ／ `gh pr list` ／ `gh pr view <番号>`。
+- 差分：`git diff`（未ステージ）／ `git diff --staged`（ステージ済み）。
+- コミットメッセージは英語短文（`type: summary`）。小さな変更でも main へは直接コミットせず、ブランチ→PR。
+
 ---
 
-## ① いちばん使う：変更を push
+## ① push（トークン直叩き・フォールバック）
 ```bash
 cd ~/Workspace/Dev/Education_Python
 git add -A
