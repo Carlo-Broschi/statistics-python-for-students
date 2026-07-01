@@ -29,12 +29,12 @@
 
 GitHub は表示のみ（実行は不可）。実行は次のいずれか。
 
-| 方法 | このリポジトリ(Private)での使い方 |
+| 方法 | 使い方 |
 |---|---|
 | **ローカル**（おすすめ） | 下記セットアップ。手元で完結・無料 |
-| **Google Colab** | 各ノート上部の「Open in Colab」バッジから開く。Private のまま可 |
+| **Google Colab** | 各ノート上部の「Open in Colab」バッジから開く。ブラウザだけで実行可 |
 | **GitHub Codespaces** | `Code → Codespaces` でブラウザ上に Jupyter 起動。`requirements.txt` を自動利用 |
-| **Binder** | 公開リポジトリ専用（Private では不可） |
+| **Binder** | 公開リポジトリで利用可（このリポジトリは Public） |
 
 Colab 手順：①「Open in Colab」→ ②先頭の「① セットアップ」セルを実行（合成データ生成、必要なら `solidpython2` を自動導入）→ ③上から実行。FreeCAD / Blender ノートのみ Colab 非対応。
 
@@ -74,7 +74,7 @@ plt.rcParams['font.family'] = 'Hiragino Sans'   # Mac
 | `ab_test.csv` | LPボタン色のA/Bテスト結果 | 実践マーケ・2級 |
 | `titanic.csv` | タイタニック乗客891人（Kaggle と同内容・公開データ） | 3級/2級 実践 |
 | `monthly_kpi.csv` | 36か月の月次KPI（リード→商談→受注→売上のファネル＋季節性） | 発展マーケ(時系列・重回帰) |
-| `btob_customers.csv` | 顧客320件（業界・購入回数・累計売上・最終購入日） | 発展マーケ(RFM) |
+| `btob_customers.csv` | 顧客320件（業界・購入回数・累計売上・最終購入日） | 発展マーケ(相関・適合度検定) |
 | `marketing.xlsx` | 上記マーケ系5種を1ブックにまとめたExcel | スプレッドシート↔Python(08) |
 
 ## 3Dモデリング
